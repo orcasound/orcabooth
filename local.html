@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Langley Whale Center: Pat Price Ocean Listening Exhibit</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="http://orcasound.net/lwcbooth/booth-style.css">
+</head>
+
+<body>
+
+<audio id="earthquake_sound">
+    <source src="sounds/local/earthquake_narrated.ogg" type="audio/ogg" />
+    <source src="sounds/local/earthquake_narrated.mp3" type="audio/mpeg" />
+</audio>
+
+
+<!-- To generate x,y pairs for image map shapes, try this site: https://www.image-map.net/ -->
+
+<div overflow: hidden;>
+
+<img src="images/local-1920x1080.png" width="1920" height="1080" usemap="#local">
+
+<map name="local"> 
+
+<area shape="rect" coords="140,197,66,94" onClick="document.getElementById('sealion').play(); return false;" />
+
+<area shape="rect" coords="472,141,222,45" onClick="document.getElementById('boat').play(); return false;" />
+
+<area shape="poly" coords="729,450,734,427,768,413,820,393,902,388,919,406,880,445,820,474,756,469" onClick="document.getElementById('seal_sound').play(); return false;" />
+
+<area shape="poly" coords="1544,529,1620,546,1756,595,1892,529,1893,862,1888,915,1806,890,1808,820,1739,810,1623,763,1537,771,1524,709,1489,714" onClick="document.getElementById('earthquake_sound').play(); return false;" />
+
+<area shape="poly" coords="941,800,961,752,1151,689,1179,595,1206,586,1221,600,1226,662,1250,668,1374,638,1404,601,1476,571,1506,544,1523,559,1513,603,1485,635,1468,700,1416,784,1320,828,1189,873,1164,932,1146,937,1122,925,1097,872,1026,863,956,831" onClick="document.getElementById('orca_sound').play(); return false;" />
+
+<area shape="rect" coords="" onClick="document.getElementById('').play(); return false;" />
+
+<area shape="poly" coords="" onClick="document.getElementById('').play(); return false;" />
+
+</map>
+
+</div>
+
+</body>
+
+</html>

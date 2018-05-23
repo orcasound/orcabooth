@@ -1,0 +1,118 @@
+body,
+
+html {
+margin:0;
+padding:0;
+color:#15638C;
+background:#000000;
+font:12pt Arial, Helvetica, sans-serif;
+z-index:1;
+*/this should hide scrollbars on 1080x1920 touchscreen/*
+overflow: hidden;
+}
+
+p {
+/*this is a slightly lighter blue if SA color is too dim on screen/*
+/*color:#3366FF;*/
+color:#15638C;
+font-family:arial, helvetica, sans-serif;
+z-index:1;
+}
+
+br {
+color:#15638C;
+}
+
+a {
+color:#15638C;
+text-decoration: underline;
+}
+
+a:hover {
+/*color: #709484;*/
+color: #04B404;
+text-decoration: none;
+} 
+
+#wrap {
+width:1920px;
+height:1080px;
+margin:0px;
+z-index:1;
+}
+
+#header {
+background:#000;
+padding:5px 10px;
+color:aqua;
+text-align:center;
+z-index:1;
+}
+
+#left {
+float:left;
+width:730px;
+padding:5px 5px 5px 10px;
+background:#000;
+z-index:1;
+}
+
+#right {
+float:right;
+width:520px;
+padding:5px 10px 5px 5px;
+background:#000;
+z-index:1;
+}
+
+.headline {font: 24pt arial; line-height: 50%; z-index:1}
+.intro {font: 18pt arial; font-style: italic; line-height: 50%; z-index:1}
+.query{font: 18pt arial;z-index:1}
+.click {font: 18pt arial; color: #990000;z-index:1}
+.record-title {font: 16pt arial;z-index:1}
+.record-intro{font: 16pt arial;z-index:1}
+.record-guide{font: 14pt arial;z-index:1}
+.content{font: 14pt times,serif; color:#709484;z-index:1}
+
+input.btn { 
+ color:#000; 
+ font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+ background-color: #fed; 
+ border:2px solid; 
+ border-color: #709484 #15638C #15638C #709484; 
+} 
+
+input.btn-live { 
+ color:#f00; 
+ font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+ background-color: #fed;  
+ border:1px solid; 
+ border-color: #709484 #15638C #15638C #709484; 
+ /* border-color: #696 #363 #363 #696; */
+} 
+
+input.btnhov { 
+ background-color:#990000;  
+ border-color: #709484 #15638C #15638C #709484; 
+}
+
+#os {position:absolute; top:300px; left:1055px;} 
+#lk {position:absolute; top:323px; left:1070px;} 
+#nb {position:absolute; top:395px; left:780px;}  
+#pt {position:absolute; top:450px; left:995px;} 
+#sa {position:absolute; top:562px; left:1105px;} 
+
+/*#appbak {visibility:hidden;}*/
+#app {position:absolute; top:5px; left:5px; height:1px; width:1px}
+#app-upperleft {position:absolute; top:5px; left:5px; height:1px; width:1px; }
+#app-under {position:absolute; top:5px; left:5px; height:1px; width:1px; visibility:hidden; }
+
+@-webkit-keyframes blink {
+  0%     { opacity: 0 } 50% { opacity: 0 }
+  50.01% { opacity: 1 } 100% { opacity: 1 }
+}
+blink {
+  -webkit-animation: blink 0.7s infinite linear alternate;
+  -webkit-font-smoothing: antialiased;
+}
+
