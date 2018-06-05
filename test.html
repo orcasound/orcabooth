@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<h2>Sound 1</h2>
+<div class="play" id="btn1">play</div>
+
+<h2>Sound 2</h2>
+<div class="play" id="btn2">play</div>
+
+<h2>Sound 3</h2>
+<div class="play" id="btn3">play</div>
+
+
+<!-- SOUNDS -->
+<audio id="sound1">
+    <source src="sounds/local/earthquake_narrated.ogg" type="audio/ogg" />
+    <source src="sounds/local/earthquake_narrated.mp3" type="audio/mpeg" />
+</audio>
+<audio id="sound2">
+    <source src="sounds/local/harbor-seal_narrated.ogg" type="audio/ogg" />
+    <source src="sounds/local/harbor-seal_narrated.mp3" type="audio/mpeg" />
+</audio>
+
+<javascript>
+$('.play').click(function(){
+    var $this = $(this);
+    var id = $this.attr('id').replace(/btn/, '');
+    $this.toggleClass('active');
+    if($this.hasClass('active')){
+        $this.text('pause'); 
+        $('audio[id^="sound"]')[id-1].play();        
+    } else {
+        $this.text('play');
+        $('audio[id^="sound"]')[id-1].pause();
+    }
+});
+</javascript>
+
+</body>
+
+</html>
