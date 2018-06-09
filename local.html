@@ -17,7 +17,8 @@ function Solo(soundobj) {
             thissound.play();
     else
         thissound.pause();
-         currentPlayer = thissound;
+	thissound.currentTime = 0;
+        currentPlayer = thissound;
 }
 </script>
 
