@@ -1,6 +1,6 @@
 # orcabooth
 
-Content and how-to for an ocean listening exhibit. First deployed at the Langley Whale Center (in Langley, WA, USA) within an antique telephone booth, the content includes recordings of local underwater sounds that play when the user selects an object within an imagemap (panoramic seascape art). 
+Content and how-to for an ocean listening exhibit. First deployed at the Langley Whale Center (in Langley, WA, USA) within an antique telephone booth, the content includes recordings of local [Salish Sea](https://maps.stefanfreelan.com/salishsea/) underwater sounds that play when the user selects an object within an imagemap (panoramic seascape art). 
 
 Please note the media in this repo are governed by Orcasound's Creative Commons BY-SA-NC license. Attribution should be to `Orcasound.net`. Contact info@orcasound.net to arrange commercial use.
 
